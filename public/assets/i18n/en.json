@@ -1,0 +1,104 @@
+{
+  "navbar": {
+    "link": {
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "contact": "Contact",
+      "hire": "Hire Me"
+    }
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Victor",
+    "description": "I build responsive web applications with modern technologies. Passionate about creating clean, efficient code and delivering exceptional user experiences.",
+    "cta_contact": "Contact Me",
+    "cta_projects": "View Projects",
+    "alt_profile": "Your Name",
+    "scroll_down": "Scroll Down"
+  },
+  "about": {
+    "title": "About",
+    "highlight": "Me",
+    "imageAlt": "About Me",
+    "subtitle": "Fullstack Developer passionate about creating exceptional web experiences",
+    "paragraph1": "I'm a dedicated fullstack developer with expertise in both frontend and backend technologies. With a strong foundation in Angular, JavaScript, TypeScript, HTML5, and CSS3 on the frontend, and Java and C# on the backend, I bring a comprehensive skill set to every project.",
+    "paragraph2": "My approach combines technical excellence with creative solutions. I'm passionate about building scalable, maintainable applications that deliver exceptional user experiences while meeting business objectives.",
+    "paragraph3": "When I'm not coding, you can find me playing video games, working out at the gym, or playing soccer. I believe in continuous learning and staying updated with the latest technologies and best practices.",
+    "name": {
+      "label": "Name:"
+    },
+    "email": {
+      "label": "Email:"
+    },
+    "location": {
+      "label": "Location:",
+      "value": "Pernambuco, Brazil"
+    },
+    "availability": {
+      "label": "Available for:",
+      "value": "Freelance, Full-time"
+    }
+  },
+  "skills": {
+    "title_1": "My",
+    "title_2": "Skills",
+    "description": "I've developed expertise in various technologies across the full stack development spectrum. Here are the key skills I bring to every project.",
+    "all": "All Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "additional_title": "Additional Skills & Tools"
+  },
+  "additional_skills": {
+    "git": "Git",
+    "gitlab": "GitLab",
+    "intellij": "Intellij",
+    "agile/scrum": "Agile/Scrum",
+    "problem_solving": "Problem Solving",
+    "team_collaboration": "Team Collaboration"
+  },
+  "projects": {
+    "title_1": "My",
+    "title_2": "Projects",
+    "description": "Here are some of the projects I've worked on. Each project showcases my skills and experience in different areas of web development.",
+    "all": "All Projects",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "fullstack": "Fullstack",
+    "live_demo": "Live Demo",
+    "code": "Code"
+  },
+  "contact": {
+    "title": "Get in",
+    "highlight": "Touch",
+    "description": "Have a project in mind or want to discuss potential opportunities? I'd love to hear from you. Fill out the form below or reach out directly through the provided contact information.",
+    "info_title": "Contact Information",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "follow": "Follow Me",
+    "form_title": "Send Me a Message",
+    "form": {
+      "name": "Your Name",
+      "name_placeholder": "John Doe",
+      "name_error": "Name is required",
+      "email": "Your Email",
+      "email_placeholder": "john@example.com",
+      "email_error": "Please enter a valid email",
+      "subject": "Subject",
+      "subject_placeholder": "Project Inquiry",
+      "subject_error": "Subject is required",
+      "message": "Message",
+      "message_placeholder": "Your message here...",
+      "message_error": "Message is required",
+      "success": "Your message has been sent successfully! I'll get back to you soon.",
+      "error": "There was an error sending your message. Please try again later.",
+      "submit_sending": "Sending...",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "title": "A fullstack developer specializing in building exceptional digital experiences with modern technologies.",
+    "copyright_text": " All rights reserved."
+  }
+}

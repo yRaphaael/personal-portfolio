@@ -1,0 +1,104 @@
+{
+  "navbar": {
+    "link": {
+      "home": "Inicio",
+      "about": "Sobre mí",
+      "skills": "Habilidades",
+      "contact": "Contacto",
+      "hire": "Contrátame"
+    }
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Victor",
+    "description": "Construyo aplicaciones web responsivas con tecnologías modernas. Apasionado por crear código limpio y eficiente, entregando experiencias excepcionales a los usuarios.",
+    "cta_contact": "Contáctame",
+    "cta_projects": "Ver Proyectos",
+    "alt_profile": "Tu Nombre",
+    "scroll_down": "Desplazar hacia abajo"
+  },
+  "about": {
+    "title": "Sobre",
+    "highlight": "mí",
+    "imageAlt": "Sobre mí",
+    "subtitle": "Desarrollador Fullstack apasionado por crear experiencias web excepcionales",
+    "paragraph1": "Soy un desarrollador fullstack dedicado con experiencia en tecnologías frontend y backend. Con una sólida base en Angular, JavaScript, TypeScript, HTML5 y CSS3 en el frontend, y Java y C# en el backend, aporto un conjunto completo de habilidades a cada proyecto.",
+    "paragraph2": "Mi enfoque combina excelencia técnica con soluciones creativas. Me apasiona construir aplicaciones escalables y mantenibles que ofrecen experiencias excepcionales a los usuarios mientras cumplen con los objetivos del negocio.",
+    "paragraph3": "Cuando no estoy programando, me encuentras jugando videojuegos, entrenando en el gimnasio o jugando fútbol. Creo en el aprendizaje continuo y en mantenerme actualizado con las últimas tecnologías y mejores prácticas.",
+    "name": {
+      "label": "Nombre:"
+    },
+    "email": {
+      "label": "Email:"
+    },
+    "location": {
+      "label": "Ubicación:",
+      "value": "Pernambuco, Brasil"
+    },
+    "availability": {
+      "label": "Disponible para:",
+      "value": "Freelance, Tiempo completo"
+    }
+  },
+  "skills": {
+    "title_1": "Mis",
+    "title_2": "Habilidades",
+    "description": "He desarrollado experiencia en varias tecnologías a lo largo del espectro de desarrollo full stack. Estas son las habilidades clave que aporto a cada proyecto.",
+    "all": "Todas las Habilidades",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "additional_title": "Habilidades y Herramientas Adicionales"
+  },
+  "additional_skills": {
+    "git": "Git",
+    "gitlab": "GitLab",
+    "intellij": "Intellij",
+    "agile/scrum": "Agile/Scrum",
+    "problem_solving": "Resolución de Problemas",
+    "team_collaboration": "Colaboración en Equipo"
+  },
+  "projects": {
+    "title_1": "Mis",
+    "title_2": "Proyectos",
+    "description": "Aquí hay algunos de los proyectos en los que he trabajado. Cada proyecto muestra mis habilidades y experiencia en diferentes áreas del desarrollo web.",
+    "all": "Todos los Proyectos",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "fullstack": "Fullstack",
+    "live_demo": "Demostración",
+    "code": "Código"
+  },
+  "contact": {
+    "title": "Ponte en",
+    "highlight": "Contacto",
+    "description": "¿Tienes un proyecto en mente o quieres discutir oportunidades potenciales? Me encantaría saber de ti. Completa el formulario a continuación o contáctame directamente a través de la información proporcionada.",
+    "info_title": "Información de Contacto",
+    "email": "Email",
+    "phone": "Teléfono",
+    "location": "Ubicación",
+    "follow": "Sígueme",
+    "form_title": "Envíame un Mensaje",
+    "form": {
+      "name": "Tu Nombre",
+      "name_placeholder": "Juan Pérez",
+      "name_error": "El nombre es obligatorio",
+      "email": "Tu Email",
+      "email_placeholder": "juan@ejemplo.com",
+      "email_error": "Por favor ingresa un email válido",
+      "subject": "Asunto",
+      "subject_placeholder": "Consulta sobre Proyecto",
+      "subject_error": "El asunto es obligatorio",
+      "message": "Mensaje",
+      "message_placeholder": "Tu mensaje aquí...",
+      "message_error": "El mensaje es obligatorio",
+      "success": "¡Tu mensaje ha sido enviado con éxito! Me pondré en contacto contigo pronto.",
+      "error": "Ocurrió un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.",
+      "submit_sending": "Enviando...",
+      "submit": "Enviar Mensaje"
+    }
+  },
+  "footer": {
+    "title": "Un desarrollador fullstack especializado en construir experiencias digitales excepcionales usando tecnologías modernas.",
+    "copyright_text": " Todos los derechos reservados."
+  }
+}

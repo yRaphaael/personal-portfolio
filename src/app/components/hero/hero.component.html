@@ -1,0 +1,68 @@
+<section id="home" class="pt-28 pb-20 md:pt-40 md:pb-32 relative">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 mb-10 md:mb-0">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">
+        {{ 'hero.greeting' | translate }} <span class="text-emerald-600">{{ 'hero.name' | translate }}</span>
+      </h1>
+      <h2 class="text-2xl md:text-3xl text-gray-600 mb-6 h-10">
+        <span appTypingAnimation [textToType]="fullText"></span>
+        <span class="animate-pulse">|</span>
+      </h2>
+      <p class="text-gray-600 mb-8 text-lg">
+        {{ 'hero.description' | translate }}
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <button (click)="scrollToSection('#contact')"
+                class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md transition-colors">
+          {{ 'hero.cta_contact' | translate }}
+        </button>
+        <button (click)="scrollToSection('#projects')"
+                class="border border-emerald-600 text-emerald-600 hover:bg-emerald-50 px-4 py-2 rounded-md transition-colors">
+          {{ 'hero.cta_projects' | translate }}
+        </button>
+      </div>
+      <div class="flex mt-8 space-x-4">
+        <a href="https://github.com/yRaphaael" target="_blank" rel="noopener noreferrer"
+           class="text-gray-600 hover:text-emerald-600 transition-colors" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/victorfigueiredocode/" target="_blank" rel="noopener noreferrer"
+           class="text-gray-600 hover:text-emerald-600 transition-colors" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:victor.raphael.figueiredo@gmail.com"
+           class="text-gray-600 hover:text-emerald-600 transition-colors" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="md:w-1/2 flex justify-center">
+      <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-emerald-600">
+        <img src="https://placehold.co/300x300/png" alt="{{ 'hero.alt_profile' | translate }}"
+             class="w-full h-full object-cover">
+      </div>
+    </div>
+  </div>
+  <button (click)="scrollToSection('#about')"
+          class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+          attr.aria-label="{{ 'hero.scroll_down' | translate }}">
+    <svg xmlns="http://www.w3.org/2000/svg" class="text-emerald-600" width="32" height="32" viewBox="0 0 24 24"
+         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="5" x2="12" y2="19"></line>
+      <polyline points="19 12 12 19 5 12"></polyline>
+    </svg>
+  </button>
+</section>

@@ -1,0 +1,44 @@
+<section id="about" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+      {{ 'about.title' | translate }} <span class="text-emerald-600">{{ 'about.highlight' | translate }}</span>
+    </h2>
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <div class="md:w-1/2">
+        <img src="https://placehold.co/600x400/png" alt="{{ 'about.imageAlt' | translate }}" class="rounded-lg shadow-lg w-full h-auto">
+      </div>
+      <div class="md:w-1/2">
+        <h3 class="text-2xl font-semibold mb-4 text-gray-800">
+          {{ 'about.subtitle' | translate }}
+        </h3>
+        <p class="text-gray-600 mb-6">
+          {{ 'about.paragraph1' | translate }}
+        </p>
+        <p class="text-gray-600 mb-6">
+          {{ 'about.paragraph2' | translate }}
+        </p>
+        <p class="text-gray-600 mb-6">
+          {{ 'about.paragraph3' | translate }}
+        </p>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <h4 class="font-semibold text-gray-800">{{ 'about.name.label' | translate }}</h4>
+            <p class="text-gray-600">Victor Figueirêdo</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800">{{ 'about.email.label' | translate }}</h4>
+            <p class="text-gray-600">victor.raphael.figueiredo&#64;gmail.com</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800">{{ 'about.location.label' | translate }}</h4>
+            <p class="text-gray-600">{{ 'about.location.value' | translate }}</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-800">{{ 'about.availability.label' | translate }}</h4>
+            <p class="text-gray-600">{{ 'about.availability.value' | translate }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
