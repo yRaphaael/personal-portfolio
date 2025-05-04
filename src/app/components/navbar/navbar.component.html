@@ -1,11 +1,12 @@
 <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
         [ngClass]="scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'">
   <div class="container mx-auto px-4 flex justify-between items-center">
-    <a href="#home" class="text-2xl font-bold text-gray-800" (click)="$event.preventDefault(); scrollToSection('#home')">
+    <a href="#home" class="text-2xl font-bold text-gray-800"
+       (click)="$event.preventDefault(); scrollToSection('#home')">
       Dev<span class="text-emerald-600">Portfolio</span>
     </a>
 
-    <div class="flex items-center space-x-4"> <!-- Adicionei este container para agrupar navegação e botão -->
+    <div class="flex items-center space-x-4">
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center space-x-8">
         <ng-container *ngFor="let link of navLinks">
@@ -22,7 +23,7 @@
       </nav>
 
       <!-- Botão de idioma e dropdown -->
-      <div class="relative"> <!-- Adicionei relative para posicionar o dropdown -->
+      <div class="relative">
         <button (click)="toggleLanguageDropdown()"
                 class="bg-emerald-600 hover:bg-emerald-700 text-white p-2 rounded-full transition-colors">
           <img src="https://img.icons8.com/?size=100&id=3685&format=png&color=ffffff"
@@ -49,11 +50,13 @@
         <button (click)="toggleMenu()"
                 class="text-gray-600 hover:text-emerald-600 transition-colors p-2"
                 aria-label="Toggle menu">
-          <svg *ngIf="!isMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <svg *ngIf="!isMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+               stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
-          <svg *ngIf="isMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          <svg *ngIf="isMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+               stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
           </svg>
         </button>
       </div>
@@ -61,12 +64,24 @@
   </div>
 
   <!-- Mobile Navigation Menu -->
-  <div *ngIf="isMenuOpen" class="fixed inset-0 bg-white z-40 pt-20">
+  <div *ngIf="isMenuOpen" class="fixed inset-0 bg-white z-40 pt-20 animate-fade-slide">
+    <div class="absolute top-4 right-4">
+      <button (click)="toggleMenu()"
+              class="text-gray-600 hover:text-red-500 transition-colors p-2"
+              aria-label="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
     <nav class="flex flex-col items-center space-y-6 p-8">
       <ng-container *ngFor="let link of navLinks">
         <a [href]="link.href"
-           (click)="$event.preventDefault(); scrollToSection(link.href)"
-           class="text-xl text-gray-800 hover:text-emerald-600 transition-colors">
+           (click)="scrollToSection(link.href)"
+           class="text-xl text-gray-800 hover:text-emerald-600 transition-colors duration-200">
           {{ link.name | translate }}
         </a>
       </ng-container>
